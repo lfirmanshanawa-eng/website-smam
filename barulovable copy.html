@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMA Muhammadiyah Kota Ternate - Website Resmi</title>
+    <meta name="description" content="Website resmi SMA Muhammadiyah Kota Ternate - Sekolah unggulan dengan fasilitas modern dan prestasi gemilang">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .page-section {
+            display: none;
+        }
+        .page-section.active {
+            display: block;
+        }
+        .nav-link.active {
+            color: #3b82f6;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    
+    <!-- Navbar -->
+    <nav id="navbar" class="bg-white shadow-md fixed w-full top-0 z-50 transition-all duration-300">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="bg-blue-600 text-white w-12 h-12 rounded-lg flex items-center justify-center font-bold text-xl">
+                        SM
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-gray-800">SMA Muhammadiyah</h1>
+                        <p class="text-xs text-gray-600">Kota Ternate</p>
+                    </div>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#" onclick="showPage('beranda')" class="nav-link active text-gray-700 hover:text-blue-600 transition">Beranda</a>
+                    <a href="#" onclick="showPage('profil')" class="nav-link text-gray-700 hover:text-blue-600 transition">Profil</a>
+                    <a href="#" onclick="showPage('akademik')" class="nav-link text-gray-700 hover:text-blue-600 transition">Akademik</a>
+                    <a href="#" onclick="showPage('berita')" class="nav-link text-gray-700 hover:text-blue-600 transition">Berita</a>
+                    <a href="#" onclick="showPage('ppdb')" class="nav-link text-gray-700 hover:text-blue-600 transition">PPDB</a>
+                    <a href="#" onclick="showPage('galeri')" class="nav-link text-gray-700 hover:text-blue-600 transition">Galeri</a>
+                    <a href="#" onclick="showPage('kontak')" class="nav-link text-gray-700 hover:text-blue-600 transition">Kontak</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <a href="#" onclick="showPage('beranda')" class="block py-2 nav-link active text-gray-700 hover:text-blue-600">Beranda</a>
+                <a href="#" onclick="showPage('profil')" class="block py-2 nav-link text-gray-700 hover:text-blue-600">Profil</a>
+                <a href="#" onclick="showPage('akademik')" class="block py-2 nav-link text-gray-700 hover:text-blue-600">Akademik</a>
+                <a href="#" onclick="showPage('berita')" class="block py-2 nav-link text-gray-700 hover:text-blue-600">Berita</a>
+                <a href="#" onclick="showPage('ppdb')" class="block py-2 nav-link text-gray-700 hover:text-blue-600">PPDB</a>
+                <a href="#" onclick="showPage('galeri')" class="block py-2 nav-link text-gray-700 hover:text-blue-600">Galeri</a>
+                <a href="#" onclick="showPage('kontak')" class="block py-2 nav-link text-gray-700 hover:text-blue-600">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-20">
+        
+        <!-- BERANDA -->
+        <section id="beranda" class="page-section active">
+            <!-- Hero Section -->
+            <div class="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+                <div class="container mx-auto px-4 py-20 md:py-32">
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                        <div>
+                            <h1 class="text-4xl md:text-5xl font-bold mb-4">Selamat Datang di SMA Muhammadiyah Kota Ternate</h1>
+                            <p class="text-lg md:text-xl mb-8 text-blue-100">Membentuk Generasi Cerdas, Berkarakter, dan Berprestasi untuk Masa Depan Indonesia yang Gemilang</p>
+                            <div class="flex flex-col sm:flex-row gap-4">
+                                <button onclick="showPage('ppdb')" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition">
+                                    Daftar Sekarang
+                                </button>
+                                <button onclick="showPage('kontak')" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition">
+                                    Hubungi Kami
+                                </button>
+                            </div>
+                        </div>
+                        <div class="hidden md:block">
+                            <img src="https://placehold.co/600x400/1e40af/ffffff?text=Gedung+Sekolah" alt="Gedung Sekolah" class="rounded-lg shadow-2xl">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pengumuman Section -->
+            <div class="container mx-auto px-4 py-16">
+                <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Pengumuman Terbaru</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-bullhorn text-blue-600 text-2xl mr-3"></i>
+                            <h3 class="font-semibold text-lg">PPDB Tahun Ajaran 2025/2026</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Pendaftaran peserta didik baru telah dibuka! Daftar sekarang dan raih kesempatan emas untuk bergabung dengan kami.</p>
+                        <a href="#" onclick="showPage('ppdb')" class="text-blue-600 font-semibold hover:underline">Selengkapnya →</a>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-trophy text-yellow-500 text-2xl mr-3"></i>
+                            <h3 class="font-semibold text-lg">Juara 1 Olimpiade Matematika</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Selamat kepada tim olimpiade kami yang berhasil meraih juara 1 tingkat provinsi dalam kompetisi matematika!</p>
+                        <a href="#" onclick="showPage('berita')" class="text-blue-600 font-semibold hover:underline">Selengkapnya →</a>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-calendar-alt text-green-600 text-2xl mr-3"></i>
+                            <h3 class="font-semibold text-lg">Jadwal Ujian Tengah Semester</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Ujian tengah semester akan dilaksanakan pada tanggal 15-20 Maret 2025. Persiapkan diri dengan baik!</p>
+                        <a href="#" onclick="showPage('akademik')" class="text-blue-600 font-semibold hover:underline">Selengkapnya →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats Section -->
+            <div class="bg-blue-600 text-white py-16">
+                <div class="container mx-auto px-4">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                        <div>
+                            <h3 class="text-4xl font-bold mb-2">850+</h3>
+                            <p class="text-blue-100">Siswa Aktif</p>
+                        </div>
+                        <div>
+                            <h3 class="text-4xl font-bold mb-2">65+</h3>
+                            <p class="text-blue-100">Guru Berpengalaman</p>
+                        </div>
+                        <div>
+                            <h3 class="text-4xl font-bold mb-2">98%</h3>
+                            <p class="text-blue-100">Kelulusan</p>
+                        </div>
+                        <div>
+                            <h3 class="text-4xl font-bold mb-2">50+</h3>
+                            <p class="text-blue-100">Prestasi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROFIL -->
+        <section id="profil" class="page-section">
+            <div class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16">
+                <div class="container mx-auto px-4">
+                    <h1 class="text-4xl font-bold text-center">Profil Sekolah</h1>
+                </div>
+            </div>
+
+            <div class="container mx-auto px-4 py-16">
+                <!-- Sejarah -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-800">Sejarah Sekolah</h2>
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            SMA Muhammadiyah Kota Ternate didirikan pada tahun 1985 dengan visi menjadi institusi pendidikan terdepan yang menghasilkan lulusan berkualitas dan berkarakter. Berawal dari gedung sederhana dengan 3 kelas, kini sekolah kami telah berkembang menjadi salah satu sekolah unggulan dengan fasilitas modern dan lengkap.
+                        </p>
+                        <p class="text-gray-700 leading-relaxed">
+                            Selama lebih dari 35 tahun berdiri, kami telah menghasilkan ribuan alumni yang sukses di berbagai bidang dan berkontribusi bagi pembangunan bangsa. Prestasi demi prestasi terus diraih, baik di tingkat regional, nasional, maupun internasional.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Visi Misi -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-800">Visi dan Misi</h2>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="bg-blue-50 p-8 rounded-lg">
+                            <h3 class="text-2xl font-bold mb-4 text-blue-600">Visi</h3>
+                            <p class="text-gray-700 leading-relaxed">
+                                Menjadi sekolah unggul yang menghasilkan lulusan cerdas, berkarakter, berprestasi, dan berwawasan global yang mampu bersaing di era digital.
+                            </p>
+                        </div>
+                        <div class="bg-blue-50 p-8 rounded-lg">
+                            <h3 class="text-2xl font-bold mb-4 text-blue-600">Misi</h3>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-blue-600 mr-2 mt-1"></i>
+                                    <span>Menyelenggarakan pendidikan berkualitas berbasis teknologi</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-blue-600 mr-2 mt-1"></i>
+                                    <span>Membentuk karakter siswa yang berakhlak mulia</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-blue-600 mr-2 mt-1"></i>
+                                    <span>Mengembangkan potensi siswa melalui kegiatan akademik dan non-akademik</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-blue-600 mr-2 mt-1"></i>
+                                    <span>Menciptakan lingkungan belajar yang kondusif dan inovatif</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Struktur Organisasi -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-800">Struktur Organisasi</h2>
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <img src="https://placehold.co/1000x600/e5e7eb/1e40af?text=Bagan+Struktur+Organisasi" alt="Struktur Organisasi" class="w-full rounded-lg">
+                    </div>
+                </div>
+
+                <!-- Data Guru -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-800">Guru & Tenaga Kependidikan</h2>
+                    <div class="grid md:grid-cols-4 gap-6">
+                        <div class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-xl transition">
+                            <img src="https://placehold.co/200x200/3b82f6/ffffff?text=Guru+1" alt="Guru" class="w-32 h-32 rounded-full mx-auto mb-4">
+                            <h3 class="font-semibold text-lg mb-1">Drs. Ahmad Santoso, M.Pd</h3>
+                            <p class="text-gray-600 text-sm mb-2">Kepala Sekolah</p>
+                            <p class="text-gray-500 text-xs">NIP: 196501011990031001</p>
+                        </div>
+                        
+                        <div class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-xl transition">
+                            <img src="https://placehold.co/200x200/3b82f6/ffffff?text=Guru+2" alt="Guru" class="w-32 h-32 rounded-full mx-auto mb-4">
+                            <h3 class="font-semibold text-lg mb-1">Sri Wahyuni, S.Pd, M.Si</h3>
+                            <p class="text-gray-600 text-sm mb-2">Wakil Kepala Sekolah</p>
+                            <p class="text-gray-500 text-xs">NIP: 197003151995122001</p>
+                        </div>
+                        
+                        <div class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-xl transition">
+                            <img src="https://placehold.co/200x200/3b82f6/ffffff?text=Guru+3" alt="Guru" class="w-32 h-32 rounded-full mx-auto mb-4">
+                            <h3 class="font-semibold text-lg mb-1">Budi Prasetyo, S.Pd</h3>
+                            <p class="text-gray-600 text-sm mb-2">Guru Matematika</p>
+                            <p class="text-gray-500 text-xs">NIP: 198205102006041002</p>
+                        </div>
+                        
+                        <div class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-xl transition">
+                            <img src="https://placehold.co/200x200/3b82f6/ffffff?text=Guru+4" alt="Guru" class="w-32 h-32 rounded-full mx-auto mb-4">
+                            <h3 class="font-semibold text-lg mb-1">Siti Nurhaliza, S.Pd</h3>
+                            <p class="text-gray-600 text-sm mb-2">Guru Bahasa Inggris</p>
+                            <p class="text-gray-500 text-xs">NIP: 198709182010012011</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fasilitas -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-800">Fasilitas Sekolah</h2>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+                            <img src="https://placehold.co/400x300/1e40af/ffffff?text=Laboratorium" alt="Laboratorium" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h3 class="font-semibold text-lg mb-2">Laboratorium</h3>
+                                <p class="text-gray-600 text-sm">Lab Komputer, Fisika, Kimia, dan Biologi dengan peralatan modern</p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+                            <img src="https://placehold.co/400x300/1e40af/ffffff?text=Perpustakaan" alt="Perpustakaan" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h3 class="font-semibold text-lg mb-2">Perpustakaan</h3>
+                                <p class="text-gray-600 text-sm">Koleksi 15.000+ buku dan ruang baca yang nyaman</p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+                            <img src="https://placehold.co/400x300/1e40af/ffffff?text=Lapangan+Olahraga" alt="Lapangan" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h3 class="font-semibold text-lg mb-2">Lapangan Olahraga</h3>
+                                <p class="text-gray-600 text-sm">Lapangan basket, voli, futsal, dan lintasan atletik</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Prestasi -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-6 text-gray-800">Prestasi Sekolah</h2>
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="flex items-start">
+                                <i class="fas fa-medal text-yellow-500 text-2xl mr-4"></i>
+                                <div>
+                                    <h3 class="font-semibold mb-1">Juara 1 Olimpiade Sains Nasional (OSN) Matematika 2024</h3>
+                                    <p class="text-gray-600 text-sm">Tingkat Provinsi</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <i class="fas fa-medal text-yellow-500 text-2xl mr-4"></i>
+                                <div>
+                                    <h3 class="font-semibold mb-1">Juara 2 Kompetisi Karya Ilmiah Remaja 2024</h3>
+                                    <p class="text-gray-600 text-sm">Tingkat Nasional</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <i class="fas fa-medal text-yellow-500 text-2xl mr-4"></i>
+                                <div>
+                                    <h3 class="font-semibold mb-1">Juara 1 Lomba Debat Bahasa Inggris 2024</h3>
+                                    <p class="text-gray-600 text-sm">Tingkat Provinsi</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <i class="fas fa-medal text-yellow-500 text-2xl mr-4"></i>
+                                <div>
+                                    <h3 class="font-semibold mb-1">Sekolah Adiwiyata Nasional 2023</h3>
+                                    <p class="text-gray-600 text-sm">Tingkat Nasional</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AKADEMIK -->
+        <section id="akademik" class="page-section">
+            <div class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16">
+                <div class="container mx-auto px-4">
+                    <h1 class="text-4xl font-bold text-center">Kurikulum & Akademik</h1>
+                </div>
+            </div>
+
+            <div class="container mx-auto px-4 py-16">
+                <!-- Kurikulum -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-800">Kurikulum Merdeka</h2>
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            SMA Muhammadiyah Kota Ternate telah menerapkan Kurikulum Merdeka yang memberikan kebebasan kepada siswa untuk memilih mata pelajaran sesuai minat dan bakat mereka. Kurikulum ini dirancang untuk mengembangkan kompetensi siswa secara menyeluruh, baik dari segi pengetahuan, keterampilan, maupun sikap.
+                        </p>
+                        <div class="grid md:grid-cols-3 gap-6 mt-6">
+                            <div class="bg-blue-50 p-6 rounded-lg">
+                                <i class="fas fa-book text-blue-600 text-3xl mb-4"></i>
+                                <h3 class="font-semibold mb-2">Pembelajaran Berbasis Proyek</h3>
+                                <p class="text-gray-600 text-sm">Siswa mengerjakan proyek nyata untuk memahami konsep secara mendalam</p>
+                            </div>
+                            <div class="bg-blue-50 p-6 rounded-lg">
+                                <i class="fas fa-users text-blue-600 text-3xl mb-4"></i>
+                                <h3 class="font-semibold mb-2">Pembelajaran Kolaboratif</h3>
+                                <p class="text-gray-600 text-sm">Kerja sama tim untuk mengembangkan keterampilan sosial</p>
+                            </div>
+                            <div class="bg-blue-50 p-6 rounded-lg">
+                                <i class="fas fa-laptop text-blue-600 text-3xl mb-4"></i>
+                                <h3 class="font-semibold mb-2">Teknologi Terintegrasi</h3>
+                                <p class="text-gray-600 text-sm">Pemanfaatan teknologi digital dalam pembelajaran</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Program Unggulan -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-800">Program Unggulan</h2>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="bg-white p-8 rounded-lg shadow-md">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-atom text-xl"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold">Kelas MIPA Unggulan</h3>
+                            </div>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                Program khusus untuk siswa yang memiliki minat dan bakat di bidang Matematika dan IPA. Dilengkapi dengan kurikulum pengayaan, praktikum intensif, dan pembimbingan olimpiade.
+                            </p>
+                            <ul class="space-y-2 text-gray-600 text-sm">
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-600 mr-2"></i>
+                                    Pembimbingan Olimpiade Sains
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-600 mr-2"></i>
+                                    Praktikum Laboratorium Lanjutan
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-600 mr-2"></i>
+                                    Kunjungan ke Universitas Terkemuka
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-8 rounded-lg shadow-md">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-language text-xl"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold">Bilingual Program</h3>
+                            </div>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                Program pembelajaran dwi-bahasa (Indonesia-Inggris) untuk beberapa mata pelajaran pilihan. Mempersiapkan siswa menghadapi perguruan tinggi dan karir global.
+                            </p>
+                            <ul class="space-y-2 text-gray-600 text-sm">
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-600 mr-2"></i>
+                                    Pembelajaran Berbahasa Inggris
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-600 mr-2"></i>
+                                    Persiapan TOEFL & IELTS
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-600 mr-2"></i>
+                                    Native Speaker Guest Lecture
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ekstrakurikuler -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-800">Kegiatan Ekstrakurikuler</h2>
+                    <div class="grid md:grid-cols-4 gap-6">
+                        <div class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-xl transition">
+                            <i class="fas fa-basketball-ball text-orange-500 text-4xl mb-4"></i>
+                            <h3 class="font-semibold mb-2">Basket</h3>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-xl transition">
+                            <i class="fas fa-volleyball-ball text-blue-500 text-4xl mb-4"></i>
+                            <h3 class="font-semibold mb-2">Voli</h3>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-xl transition">
+                            <i class="fas fa-futbol text-green-500 text-4xl mb-4"></i>
+                            <h3 class="font-semibold mb-2">Futsal</h3>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-xl transition">
+                            <i class="fas fa-table-tennis text-red-500 text-4xl mb-4"></i>
+                            <h3 class="font-semibold mb-2">Tenis Meja</h3>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-xl transition">
+                            <i class="fas fa-music text-purple-500 text-4xl mb-4"></i>
+                            <h3 class="font-semibold mb-2">Musik</h3>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-xl transition">
+                            <i class="fas fa-palette text-pink-500 text-4xl mb-4"></i>
+                            <h3 class="font-semibold mb-2">Seni Rupa</h3>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-xl transition">
+                            <i class="fas fa-theater-masks text-indigo-500 text-4xl mb-4"></i>
+                            <h3 class="font-semibold mb-2">Teater</h3>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-xl transition">
+                            <i class="fas fa-newspaper text-gray-600 text-4xl mb-4"></i>
+                            <h3 class="font-semibold mb-2">Jurnalistik</h3>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-xl transition">
+                            <i class="fas fa-laptop-code text-blue-600 text-4xl mb-4"></i>
+                            <h3 class="font-semibold mb-2">Coding Club</h3>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-xl transition">
+                            <i class="fas fa-flask text-teal-500 text-4xl mb-4"></i>
+                            <h3 class="font-semibold mb-2">Sains Club</h3>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-xl transition">
+                            <i class="fas fa-globe text-cyan-500 text-4xl mb-4"></i>
+                            <h3 class="font-semibold mb-2">English Club</h3>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-xl transition">
+                            <i class="fas fa-seedling text-green-600 text-4xl mb-4"></i>
+                            <h3 class="font-semibold mb-2">Pramuka</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kalender Akademik -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-6 text-gray-800">Kalender Akademik 2024/2025</h2>
+                    <div class="bg-white rounded-lg shadow-md overflow-x-auto">
+                        <table class="w-full">
+                            <thead class="bg-blue-600 text-white">
+                                <tr>
+                                    <th class="px-6 py-4 text-left">Tanggal</th>
+                                    <th class="px-6 py-4 text-left">Kegiatan</th>
+                                    <th class="px-6 py-4 text-left">Keterangan</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-200">
+                                <tr class="hover:bg-gray-50">
+                                    <td class="px-6 py-4">15 Juli 2024</td>
+                                    <td class="px-6 py-4">Awal Tahun Ajaran</td>
+                                    <td class="px-6 py-4">Masuk sekolah hari pertama</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="px-6 py-4">17 Agustus 2024</td>
+                                    <td class="px-6 py-4">HUT RI ke-79</td>
+                                    <td class="px-6 py-4">Upacara & lomba</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="px-6 py-4">15-20 Maret 2025</td>
+                                    <td class="px-6 py-4">Ujian Tengah Semester</td>
+                                    <td class="px-6 py-4">Semester Genap</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="px-6 py-4">1-10 Juni 2025</td>
+                                    <td class="px-6 py-4">Ujian Akhir Semester</td>
+                                    <td class="px-6 py-4">Semester Genap</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="px-6 py-4">20 Juni 2025</td>
+                                    <td class="px-6 py-4">Pembagian Rapor</td>
+                                    <td class="px-6 py-4">Akhir semester genap</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BERITA -->
+        <section id="berita" class="page-section">
+            <div class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16">
+                <div class="container mx-auto px-4">
+                    <h1 class="text-4xl font-bold text-center">Berita & Kegiatan</h1>
+                </div>
+            </div>
+
+            <div class="container mx-auto px-4 py-16">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Berita 1 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+                        <img src="https://placehold.co/600x400/1e40af/ffffff?text=Olimpiade+Matematika" alt="Olimpiade" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <div class="flex items-center text-gray-500 text-sm mb-3">
+                                <i class="far fa-calendar mr-2"></i>
+                                <span>15 Januari 2025</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-3 text-gray-800">Siswa SMA Muhammadiyah Kota Ternate Raih Juara 1 Olimpiade Matematika Tingkat Provinsi</h3>
+                            <p class="text-gray-600 mb-4">
+                                Tim olimpiade matematika SMA Muhammadiyah Kota Ternate berhasil meraih juara 1 dalam kompetisi matematika tingkat provinsi yang diselenggarakan di Universitas Negeri. Prestasi gemilang ini merupakan hasil kerja keras dan pembimbingan intensif...
+                            </p>
+                            <button class="text-blue-600 font-semibold hover:underline">Baca Selengkapnya →</button>
+                        </div>
+                    </div>
+
+                    <!-- Berita 2 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+                        <img src="https://placehold.co/600x400/1e40af/ffffff?text=Lomba+17+Agustus" alt="Lomba" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <div class="flex items-center text-gray-500 text-sm mb-3">
+                                <i class="far fa-calendar mr-2"></i>
+                                <span>17 Agustus 2024</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-3 text-gray-800">Peringatan HUT RI ke-79 dengan Meriah di SMA Muhammadiyah Kota Ternate</h3>
+                            <p class="text-gray-600 mb-4">
+                                Peringatan Hari Ulang Tahun Kemerdekaan RI ke-79 dirayakan dengan penuh semangat di SMA Muhammadiyah Kota Ternate. Berbagai lomba diadakan untuk memeriahkan acara, mulai dari lomba balap karung, tarik tambang, hingga makan kerupuk...
+                            </p>
+                            <button class="text-blue-600 font-semibold hover:underline">Baca Selengkapnya →</button>
+                        </div>
+                    </div>
+
+                    <!-- Berita 3 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+                        <img src="https://placehold.co/600x400/1e40af/ffffff?text=Bakti+Sosial" alt="Baksos" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <div class="flex items-center text-gray-500 text-sm mb-3">
+                                <i class="far fa-calendar mr-2"></i>
+                                <span>10 Desember 2024</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-3 text-gray-800">Bakti Sosial OSIS ke Panti Asuhan dan Yayasan Anak Yatim</h3>
+                            <p class="text-gray-600 mb-4">
+                                Pengurus OSIS SMA Muhammadiyah Kota Ternate mengadakan kegiatan bakti sosial ke panti asuhan dan yayasan anak yatim sebagai wujud kepedulian sosial. Kegiatan ini meliputi pembagian sembako, pakaian layak pakai, dan kegiatan belajar bersama...
+                            </p>
+                            <button class="text-blue-600 font-semibold hover:underline">Baca Selengkapnya →</button>
+                        </div>
+                    </div>
+
+                    <!-- Berita 4 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+                        <img src="https://placehold.co/600x400/1e40af/ffffff?text=Study+Tour" alt="Study Tour" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <div class="flex items-center text-gray-500 text-sm mb-3">
+                                <i class="far fa-calendar mr-2"></i>
+                                <span>5 November 2024</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-3 text-gray-800">Siswa Kelas XI Melaksanakan Study Tour ke Yogyakarta</h3>
+                            <p class="text-gray-600 mb-4">
+                                Siswa kelas XI melaksanakan kegiatan study tour edukatif ke berbagai tempat bersejarah di Yogyakarta. Kunjungan meliputi Candi Borobudur, Keraton Yogyakarta, Museum Dirgantara, dan beberapa universitas terkemuka...
+                            </p>
+                            <button class="text-blue-600 font-semibold hover:underline">Baca Selengkapnya →</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PPDB -->
+        <section id="ppdb" class="page-section">
+            <div class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16">
+                <div class="container mx-auto px-4">
+                    <h1 class="text-4xl font-bold text-center">Penerimaan Peserta Didik Baru (PPDB)</h1>
+                    <p class="text-center text-blue-100 mt-4">Tahun Ajaran 2025/2026</p>
+                </div>
+            </div>
+
+            <div class="container mx-auto px-4 py-16">
+                <!-- Info PPDB -->
+                <div class="bg-yellow-50 border-l-4 border-yellow-500 p-6 mb-8 rounded-lg">
+                    <div class="flex items-center">
+                        <i class="fas fa-info-circle text-yellow-500 text-2xl mr-4"></i>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1">Pendaftaran PPDB 2025/2026 Telah Dibuka!</h3>
+                            <p class="text-gray-700">Daftarkan diri Anda sekarang dan bergabunglah bersama keluarga besar SMA Muhammadiyah Kota Ternate</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Syarat & Ketentuan -->
+                <div class="mb-12">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-800">Syarat dan Ketentuan</h2>
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-4 text-blue-600">Persyaratan Umum:</h3>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-600 mr-3 mt-1"></i>
+                                <span class="text-gray-700">Lulusan SMP/MTs atau sederajat tahun 2024/2025</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-600 mr-3 mt-1"></i>
+                                <span class="text-gray-700">Usia maksimal 21 tahun pada awal tahun ajaran baru</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-600 mr-3 mt-1"></i>
+                                <span class="text-gray-700">Memiliki NISN (Nomor Induk Siswa Nasional)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-600 mr-3 mt-1"></i>
+                                <span class="text-gray-700">Sehat jasmani dan rohani</span>
+                            </li>
+                        </ul>
+
+                        <h3 class="text-xl font-semibold mb-4 text-blue-600">Dokumen yang Diperlukan:</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-file-alt text-blue-600 mr-3 mt-1"></i>
+                                <span class="text-gray-700">Fotokopi Ijazah/SKHUN yang dilegalisir (1 lembar)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-file-alt text-blue-600 mr-3 mt-1"></i>
+                                <span class="text-gray-700">Fotokopi Kartu Keluarga (1 lembar)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-file-alt text-blue-600 mr-3 mt-1"></i>
+                                <span class="text-gray-700">Fotokopi Akta Kelahiran (1 lembar)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-file-alt text-blue-600 mr-3 mt-1"></i>
+                                <span class="text-gray-700">Pas foto berwarna 3x4 (3 lembar)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-file-alt text-blue-600 mr-3 mt-1"></i>
+                                <span class="text-gray-700">Surat Keterangan Sehat dari dokter</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Jadwal Seleksi -->
+                <div class="mb-12">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-800">Jadwal Seleksi PPDB 2025/2026</h2>
+                    <div class="bg-white rounded-lg shadow-md overflow-x-auto">
+                        <table class="w-full">
+                            <thead class="bg-blue-600 text-white">
+                                <tr>
+                                    <th class="px-6 py-4 text-left">Tahap</th>
+                                    <th class="px-6 py-4 text-left">Tanggal</th>
+                                    <th class="px-6 py-4 text-left">Keterangan</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-200">
+                                <tr class="hover:bg-gray-50">
+                                    <td class="px-6 py-4 font-semibold">Pendaftaran Online</td>
+                                    <td class="px-6 py-4">1 - 15 Juni 2025</td>
+                                    <td class="px-6 py-4">Via website resmi PPDB</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="px-6 py-4 font-semibold">Verifikasi Berkas</td>
+                                    <td class="px-6 py-4">16 - 18 Juni 2025</td>
+                                    <td class="px-6 py-4">Datang ke sekolah</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="px-6 py-4 font-semibold">Seleksi Administrasi</td>
+                                    <td class="px-6 py-4">19 - 21 Juni 2025</td>
+                                    <td class="px-6 py-4">Berdasarkan nilai rapor</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="px-6 py-4 font-semibold">Pengumuman Hasil</td>
+                                    <td class="px-6 py-4">25 Juni 2025</td>
+                                    <td class="px-6 py-4">Via website & papan pengumuman</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="px-6 py-4 font-semibold">Daftar Ulang</td>
+                                    <td class="px-6 py-4">26 - 30 Juni 2025</td>
+                                    <td class="px-6 py-4">Bawa berkas asli</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="px-6 py-4 font-semibold">Awal Tahun Ajaran</td>
+                                    <td class="px-6 py-4">14 Juli 2025</td>
+                                    <td class="px-6 py-4">Mulai pembelajaran</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Form Pendaftaran -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-6 text-gray-800">Formulir Pendaftaran Online</h2>
+                    <div class="bg-white p-8 rounded-lg shadow-md max-w-3xl mx-auto">
+                        <form id="ppdb-form" onsubmit="submitPPDB(event)">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-gray-700 font-semibold mb-2">Nama Lengkap <span class="text-red-500">*</span></label>
+                                    <input type="text" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent" placeholder="Masukkan nama lengkap">
+                                </div>
+                                
+                                <div>
+                                    <label class="block text-gray-700 font-semibold mb-2">NISN <span class="text-red-500">*</span></label>
+                                    <input type="text" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent" placeholder="Nomor Induk Siswa Nasional">
+                                </div>
+                                
+                                <div>
+                                    <label class="block text-gray-700 font-semibold mb-2">Asal Sekolah <span class="text-red-500">*</span></label>
+                                    <input type="text" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent" placeholder="SMP/MTs asal">
+                                </div>
+                                
+                                <div>
+                                    <label class="block text-gray-700 font-semibold mb-2">Nama Wali <span class="text-red-500">*</span></label>
+                                    <input type="text" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent" placeholder="Nama orang tua/wali">
+                                </div>
+                                
+                                <div>
+                                    <label class="block text-gray-700 font-semibold mb-2">No. WhatsApp <span class="text-red-500">*</span></label>
+                                    <input type="tel" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent" placeholder="08xxxxxxxxxx">
+                                </div>
+                                
+                                <div>
+                                    <label class="block text-gray-700 font-semibold mb-2">Email</label>
+                                    <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent" placeholder="email@contoh.com">
+                                </div>
+                            </div>
+                            
+                            <div class="mt-6">
+                                <label class="block text-gray-700 font-semibold mb-2">Alamat Lengkap <span class="text-red-500">*</span></label>
+                                <textarea required rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent" placeholder="Masukkan alamat lengkap"></textarea>
+                            </div>
+                            
+                            <div class="mt-6">
+                                <label class="flex items-center">
+                                    <input type="checkbox" required class="w-5 h-5 text-blue-600 border-gray-300 rounded focus:ring-blue-600">
+                                    <span class="ml-3 text-gray-700">Saya menyatakan bahwa data yang saya isi adalah benar dan dapat dipertanggungjawabkan</span>
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-blue-600 text-white py-4 rounded-lg font-semibold hover:bg-blue-700 transition mt-8">
+                                <i class="fas fa-paper-plane mr-2"></i> Kirim Pendaftaran
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALERI -->
+        <section id="galeri" class="page-section">
+            <div class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16">
+                <div class="container mx-auto px-4">
+                    <h1 class="text-4xl font-bold text-center">Galeri Kegiatan</h1>
+                </div>
+            </div>
+
+            <div class="container mx-auto px-4 py-16">
+                <!-- Album 1 -->
+                <div class="mb-12">
+                    <h2 class="text-2xl font-bold mb-6 text-gray-800">Kegiatan Pembelajaran</h2>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <div class="relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition cursor-pointer group">
+                            <img src="https://placehold.co/400x400/1e40af/ffffff?text=Pembelajaran+1" alt="Galeri" class="w-full h-64 object-cover group-hover:scale-110 transition duration-300">
+                            <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition"></div>
+                        </div>
+                        <div class="relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition cursor-pointer group">
+                            <img src="https://placehold.co/400x400/1e40af/ffffff?text=Pembelajaran+2" alt="Galeri" class="w-full h-64 object-cover group-hover:scale-110 transition duration-300">
+                            <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition"></div>
+                        </div>
+                        <div class="relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition cursor-pointer group">
+                            <img src="https://placehold.co/400x400/1e40af/ffffff?text=Pembelajaran+3" alt="Galeri" class="w-full h-64 object-cover group-hover:scale-110 transition duration-300">
+                            <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition"></div>
+                        </div>
+                        <div class="relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition cursor-pointer group">
+                            <img src="https://placehold.co/400x400/1e40af/ffffff?text=Pembelajaran+4" alt="Galeri" class="w-full h-64 object-cover group-hover:scale-110 transition duration-300">
+                            <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Album 2 -->
+                <div class="mb-12">
+                    <h2 class="text-2xl font-bold mb-6 text-gray-800">Lomba 17 Agustus</h2>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <div class="relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition cursor-pointer group">
+                            <img src="https://placehold.co/400x400/dc2626/ffffff?text=Lomba+17+Agustus+1" alt="Galeri" class="w-full h-64 object-cover group-hover:scale-110 transition duration-300">
+                            <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition"></div>
+                        </div>
+                        <div class="relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition cursor-pointer group">
+                            <img src="https://placehold.co/400x400/dc2626/ffffff?text=Lomba+17+Agustus+2" alt="Galeri" class="w-full h-64 object-cover group-hover:scale-110 transition duration-300">
+                            <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition"></div>
+                        </div>
+                        <div class="relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition cursor-pointer group">
+                            <img src="https://placehold.co/400x400/dc2626/ffffff?text=Lomba+17+Agustus+3" alt="Galeri" class="w-full h-64 object-cover group-hover:scale-110 transition duration-300">
+                            <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition"></div>
+                        </div>
+                        <div class="relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition cursor-pointer group">
+                            <img src="https://placehold.co/400x400/dc2626/ffffff?text=Lomba+17+Agustus+4" alt="Galeri" class="w-full h-64 object-cover group-hover:scale-110 transition duration-300">
+                            <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Album 3 -->
+                <div>
+                    <h2 class="text-2xl font-bold mb-6 text-gray-800">Kegiatan Ekstrakurikuler</h2>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <div class="relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition cursor-pointer group">
+                            <img src="https://placehold.co/400x400/059669/ffffff?text=Ekskul+1" alt="Galeri" class="w-full h-64 object-cover group-hover:scale-110 transition duration-300">
+                            <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition"></div>
+                        </div>
+                        <div class="relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition cursor-pointer group">
+                            <img src="https://placehold.co/400x400/059669/ffffff?text=Ekskul+2" alt="Galeri" class="w-full h-64 object-cover group-hover:scale-110 transition duration-300">
+                            <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition"></div>
+                        </div>
+                        <div class="relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition cursor-pointer group">
+                            <img src="https://placehold.co/400x400/059669/ffffff?text=Ekskul+3" alt="Galeri" class="w-full h-64 object-cover group-hover:scale-110 transition duration-300">
+                            <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition"></div>
+                        </div>
+                        <div class="relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition cursor-pointer group">
+                            <img src="https://placehold.co/400x400/059669/ffffff?text=Ekskul+4" alt="Galeri" class="w-full h-64 object-cover group-hover:scale-110 transition duration-300">
+                            <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- KONTAK -->
+        <section id="kontak" class="page-section">
+            <div class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16">
+                <div class="container mx-auto px-4">
+                    <h1 class="text-4xl font-bold text-center">Hubungi Kami</h1>
+                </div>
+            </div>
+
+            <div class="container mx-auto px-4 py-16">
+                <div class="grid md:grid-cols-2 gap-12">
+                    <!-- Informasi Kontak -->
+                    <div>
+                        <h2 class="text-3xl font-bold mb-6 text-gray-800">Informasi Kontak</h2>
+                        
+                        <div class="bg-white p-8 rounded-lg shadow-md mb-6">
+                            <div class="space-y-6">
+                                <div class="flex items-start">
+                                    <div class="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-semibold text-lg mb-1">Alamat</h3>
+                                        <p class="text-gray-600">Jl. Pendidikan No. 123, Kota, Provinsi 12345, Indonesia</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                        <i class="fas fa-phone-alt"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-semibold text-lg mb-1">Telepon</h3>
+                                        <p class="text-gray-600">(021) 1234-5678</p>
+                                        <p class="text-gray-600">WhatsApp: 0812-3456-7890</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-semibold text-lg mb-1">Email</h3>
+                                        <p class="text-gray-600">info@smamuhkotternate.sch.id</p>
+                                        <p class="text-gray-600">ppdb@smamuhkotternate.sch.id</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-semibold text-lg mb-1">Jam Operasional</h3>
+                                        <p class="text-gray-600">Senin - Jumat: 07:00 - 16:00 WIB</p>
+                                        <p class="text-gray-600">Sabtu: 07:00 - 13:00 WIB</p>
+                                        <p class="text-gray-600">Minggu & Libur: Tutup</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Map -->
+                        <div class="bg-white p-4 rounded-lg shadow-md">
+                            <img src="https://placehold.co/600x400/e5e7eb/1e40af?text=Lokasi+SMA+Muhammadiyah+Kota+Ternate" alt="Peta Lokasi" class="w-full rounded-lg">
+                        </div>
+                    </div>
+
+                    <!-- Form Kontak -->
+                    <div>
+                        <h2 class="text-3xl font-bold mb-6 text-gray-800">Kirim Pesan</h2>
+                        <div class="bg-white p-8 rounded-lg shadow-md">
+                            <form id="contact-form" onsubmit="submitContact(event)">
+                                <div class="mb-6">
+                                    <label class="block text-gray-700 font-semibold mb-2">Nama Lengkap <span class="text-red-500">*</span></label>
+                                    <input type="text" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent" placeholder="Masukkan nama Anda">
+                                </div>
+                                
+                                <div class="mb-6">
+                                    <label class="block text-gray-700 font-semibold mb-2">Email <span class="text-red-500">*</span></label>
+                                    <input type="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent" placeholder="email@contoh.com">
+                                </div>
+                                
+                                <div class="mb-6">
+                                    <label class="block text-gray-700 font-semibold mb-2">Nomor Telepon</label>
+                                    <input type="tel" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent" placeholder="08xxxxxxxxxx">
+                                </div>
+                                
+                                <div class="mb-6">
+                                    <label class="block text-gray-700 font-semibold mb-2">Pesan <span class="text-red-500">*</span></label>
+                                    <textarea required rows="6" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent" placeholder="Tulis pesan Anda di sini..."></textarea>
+                                </div>
+                                
+                                <button type="submit" class="w-full bg-blue-600 text-white py-4 rounded-lg font-semibold hover:bg-blue-700 transition">
+                                    <i class="fas fa-paper-plane mr-2"></i> Kirim Pesan
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <!-- About -->
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="bg-blue-600 text-white w-12 h-12 rounded-lg flex items-center justify-center font-bold text-xl">
+                            SM
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">SMA Muhammadiyah</h3>
+                            <p class="text-sm text-gray-400">Kota Ternate</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Membentuk generasi cerdas, berkarakter, dan berprestasi untuk masa depan Indonesia yang gemilang.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Link Cepat</h3>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="#" onclick="showPage('profil')" class="hover:text-white transition">Profil Sekolah</a></li>
+                        <li><a href="#" onclick="showPage('akademik')" class="hover:text-white transition">Akademik</a></li>
+                        <li><a href="#" onclick="showPage('ppdb')" class="hover:text-white transition">PPDB</a></li>
+                        <li><a href="#" onclick="showPage('kontak')" class="hover:text-white transition">Hubungi Kami</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Kontak Kami</h3>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mr-2 mt-1"></i>
+                            <span>Jl. Pendidikan No. 123, Kota, Provinsi</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-2"></i>
+                            <span>(021) 1234-5678</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2"></i>
+                            <span>info@smamuhkotternate.sch.id</span>
+                        </li>
+                    </ul>
+                    
+                    <!-- Social Media -->
+                    <div class="flex space-x-4 mt-6">
+                        <a href="#" class="bg-gray-700 hover:bg-blue-600 w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-gray-700 hover:bg-blue-600 w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="bg-gray-700 hover:bg-blue-600 w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="bg-gray-700 hover:bg-blue-600 w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="border-t border-gray-700 pt-8 text-center">
+                <p class="text-gray-400 text-sm">
+                    &copy; 2025 SMA Muhammadiyah Kota Ternate. Hak Cipta Dilindungi Undang-Undang.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Navigation functionality
+        function showPage(pageId) {
+            // Hide all pages
+            const pages = document.querySelectorAll('.page-section');
+            pages.forEach(page => page.classList.remove('active'));
+            
+            // Show selected page
+            document.getElementById(pageId).classList.add('active');
+            
+            // Update nav links
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => link.classList.remove('active'));
+            
+            // Add active class to clicked link
+            event.target.classList.add('active');
+            
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            
+            // Close mobile menu if open
+            document.getElementById('mobile-menu').classList.add('hidden');
+        }
+
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // PPDB Form submission
+        function submitPPDB(event) {
+            event.preventDefault();
+            alert('Terima kasih! Pendaftaran Anda telah diterima. Tim kami akan menghubungi Anda segera.');
+            document.getElementById('ppdb-form').reset();
+        }
+
+        // Contact Form submission
+        function submitContact(event) {
+            event.preventDefault();
+            alert('Terima kasih! Pesan Anda telah terkirim. Kami akan merespons dalam 1x24 jam.');
+            document.getElementById('contact-form').reset();
+        }
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('shadow-lg');
+            } else {
+                navbar.classList.remove('shadow-lg');
+            }
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
